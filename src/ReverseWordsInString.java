@@ -6,9 +6,11 @@ public class ReverseWordsInString {
         }
         String[] arr = input.split(" ", 2);
         String firstWord = arr[0];
+        System.out.println(firstWord);
         String remainingSentence;
-        if (arr.length == 2)
+        if (arr.length == 2) {
             remainingSentence = arr[1];
+        }
         else
             remainingSentence = "";
         return reverse(remainingSentence) + firstWord + " ";
